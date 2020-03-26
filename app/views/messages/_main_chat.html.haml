@@ -1,0 +1,29 @@
+.chatmain
+  .chatmain-groupinfo
+    .chatmain-groupinfo_name
+      .chatmain-groupinfo_name_user
+        tesuto
+      .chatmain-groupinfo_name_group
+        tesuto
+    .chatmain-groupinfo_edit
+      = link_to 'Edit', '#' ,class: "edit"
+
+      
+  .chatmain-messeage_list
+    .chatmain-messeage_list_box
+      .chatmain-messeage_list_box_data
+        .chatmain-messeage_list_box_data_name
+          雄一朗
+        .chatmain-messeage_list_box_data_day
+          2020/03/25(Wed) 21:19:49
+      .chatmain-messeage_list_box_masseage
+        tesuto
+  .chatmain-masseage_form
+    .chatmain-masseage_form_input
+      %input{type: "text" , class: "chatmain-masseage_form_input_text", placeholder: "type a message"}
+        %label{class: "chatmain-masseage_form_input_text_masseage"}
+          = icon('fas', 'image')
+          %input{type: "file", class: "chatmain-masseage_form_input_text_masseage_file"}
+      %input{type: "submit", class: "input_btn"}   
+
+
