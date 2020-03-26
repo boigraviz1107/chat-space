@@ -12,38 +12,38 @@
   width: 300px;
   background-color:#253141;
   height: 100%;
-  .side-bar_username{
+  &_username{
     height: 100px;
     background-color: #253141;
     display: flex;
     align-items: center;
     padding: 0 20px;
-    .side-bar_username_top-items{
+    &_top-items{
       background-color: #253141;
       height: 20px;
       width: 100%;
       align-items: center;
       display: flex;
       justify-content: space-between;
-      .side-bar_username_top-items_name{
+      &_name{
         display: flex;
         align-items: center;
         color: white;
         font-size: 16px;
       }
-      .side-bar_username_top-items_icons{
+      &_icons{
         width: 60px;
         align-items: center;
         font-size: 14px;
         display: flex;
         justify-content: flex-end;
-        .side-bar_username_top-items_icons_edit{
+        &_edit{
           color: #ffffff;
           margin: 0px;
           padding: 0px;
           text-decoration: none;
         }
-        .side-bar_username_top-items_icons_cog{
+        &_cog{
           color: #ffffff;
           padding-left: 5px;
           margin: 0px;
@@ -52,11 +52,11 @@
       }
     }
   }
-  .side-bar_gruoplist{
+  &_gruoplist{
     height: calc( 100vh - 100px );
     background-color: #2f3e51;
     padding: 20px 20px 0;
-    .side-bar_gruoplist_chat{
+    &_chat{
       color: white;
       font-style: #ffffff bold;
       margin-bottom: 40px;
@@ -65,7 +65,7 @@
         margin-bottom: 5px;
         font-size: 15px;
       }
-      .side-bar_gruoplist_chat_messeage{
+      &_messeage{
         font-size: 11px;
       }
     }
@@ -76,26 +76,26 @@
   width: calc( 100vw - 300px );
   background-color: #ffffff;
   height: 100%;
-  .chatmain-groupinfo{
+  &-groupinfo{
     height: 100px;
     background-color: #ffffff;
     border-bottom-color: #eeeeee;
     display: flex;
     padding: 0 40px;
     justify-content: space-between;
-    .chatmain-groupinfo_name{
+    &_name{
       margin-top: 35px;
-      .chatmain-groupinfo_name_user{
+      &_user{
         color: #333333;
         margin-bottom: 15px;
         font-size: 20px;
       }
-      .chatmain-groupinfo_name_group{
+      &_group{
         color: #999999;
         font-size: 12px;
       }
     }
-    .chatmain-groupinfo_edit{
+    &_edit{
       margin-top: 28px;
       font-size: 16px;
       .edit{
@@ -109,27 +109,27 @@
      }
     }
   }
-  .chatmain-messeage_list{
+  &-messeage_list{
     background-color: #fafafa;
     height: calc( 100vh - 190px );
-    .chatmain-messeage_list_box{
+    &_box{
       padding-top: 35px;
       padding-bottom: 46px;
       padding-left: 40px;
-      .chatmain-messeage_list_box_data{
+      &_data{
         margin-bottom: 12px;
         display: flex;
-        .chatmain-messeage_list_box_data_name{
+        &_name{
           font-size: 16px;
           color: #333333;
         }
-        .chatmain-messeage_list_box_data_day{
+        &_day{
           font-size: 12px;
           color: #999999;
           margin-left: 10px;
         }
       }
-      .chatmain-messeage_list_box_masseage{
+      &_masseage{
         font-size: 14px;
         color: #434A54;
       }
@@ -137,26 +137,21 @@
   }
   
 }
-
 .chatmain-masseage_form{
   height: 90px;
   background-color: #d2d2d2;
   padding: 20px 40px;
 }
-
 .chatmain-masseage_form_input{
   width: 100%;
   display: flex;
   position: relative;
 }
-
 .chatmain-masseage_form_input_text{
   height: 50px;
   width: 100%;
   padding: 0 40px 0 10px;
-  // position: relative;
 }
-
 .chatmain-masseage_form_input_text_masseage{
   font-size: 1.3rem;
   position: absolute;
@@ -166,15 +161,6 @@
 .chatmain-masseage_form_input_text_masseage_file{
   display: none;
 }
-
-
-
-
-
-
-
-
-
 .input_btn{
   width: 100px;
   height: 50px;
@@ -184,95 +170,3 @@
   color: white;
   cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
