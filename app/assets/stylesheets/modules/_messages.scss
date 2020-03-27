@@ -56,17 +56,21 @@
     height: calc( 100vh - 100px );
     background-color: #2f3e51;
     padding: 20px 20px 0;
-    &_chat{
-      color: white;
+    .group{
+      // color: white;
       font-style: #ffffff bold;
       margin-bottom: 40px;
       box-sizing: border-box;
-      .side-bar_gruoplist_chat_name{
-        margin-bottom: 5px;
-        font-size: 15px;
-      }
-      &_messeage{
-        font-size: 11px;
+      a {
+        color: white;
+        text-decoration: none;
+        .group__name{
+          margin-bottom: 5px;
+          font-size: 15px;
+        }
+        .group__message{
+          font-size: 11px;
+        }
       }
     }
   }
@@ -143,28 +147,34 @@
   padding: 20px 40px;
 }
 .chatmain-masseage_form_input{
+  // width: 100%;
+  // display: flex;
+  // position: relative;
+}
+.new_message{
   width: 100%;
   display: flex;
   position: relative;
+
 }
 .chatmain-masseage_form_input_text{
   height: 50px;
   width: 100%;
   padding: 0 40px 0 10px;
 }
-.chatmain-masseage_form_input_text_masseage{
+.chatmain-masseage_form_input_mask_masseage{
   font-size: 1.3rem;
   position: absolute;
   top: 10px;
   right: 130px;
 }
-.chatmain-masseage_form_input_text_masseage_file{
+.chatmain-masseage_form_input_mask_masseage_file{
   display: none;
 }
 .input_btn{
   width: 100px;
   height: 50px;
-  padding: 0 30px;
+  // padding: 0 30px;
   margin-left: 15px;
   background-color: #38aef0;
   color: white;
