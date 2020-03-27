@@ -1,0 +1,38 @@
+.chatmain
+  .messages
+  = render @messages
+
+  .chatmain-groupinfo
+    .chatmain-groupinfo_name
+      .chatmain-groupinfo_name_user
+        = @group.name
+      .chatmain-groupinfo_name_group
+        .chatmain-groupinfo_name_group_member
+          Member：
+          - @group.users.each do |user|
+            = user.name
+      
+    .chatmain-groupinfo_edit
+      = link_to 'Edit',  edit_group_path(@group) ,class: "edit"
+
+      
+  .chatmain-messeage_list
+    .chatmain-messeage_list_box
+      .chatmain-messeage_list_box_data
+        .chatmain-messeage_list_box_data_name
+          雄一朗
+        .chatmain-messeage_list_box_data_day
+          2020/03/25(Wed) 21:19:49
+      .chatmain-messeage_list_box_masseage
+        tesuto
+  .chatmain-masseage_form
+    .chatmain-masseage_form_input
+      = form_for [@group, @message] do |f|
+        = f.text_field :content, class: "chatmain-masseage_form_input_text", placeholder: "type a message"
+        .chatmain-masseage_form_input_mask
+          = f.label :image, class: "chatmain-masseage_form_input_mask_masseage" do
+            = icon('fas', 'image')
+          = f.file_field :image, class: "chatmain-masseage_form_input_mask_masseage_file"
+        = f.submit "submit", class: "input_btn"
+
+
