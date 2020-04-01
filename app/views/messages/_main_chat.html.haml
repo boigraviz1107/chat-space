@@ -1,6 +1,4 @@
 .chatmain
-  .messages
-  = render @messages
 
   .chatmain-groupinfo
     .chatmain-groupinfo_name
@@ -17,14 +15,7 @@
 
       
   .chatmain-messeage_list
-    .chatmain-messeage_list_box
-      .chatmain-messeage_list_box_data
-        .chatmain-messeage_list_box_data_name
-          雄一朗
-        .chatmain-messeage_list_box_data_day
-          2020/03/25(Wed) 21:19:49
-      .chatmain-messeage_list_box_masseage
-        tesuto
+    =render @messages
   .chatmain-masseage_form
     .chatmain-masseage_form_input
       = form_for [@group, @message] do |f|
