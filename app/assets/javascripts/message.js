@@ -45,7 +45,6 @@ $(function() {
   
   var reloadMessages = function() {
     var last_message_id = $('.chatmain-messeage_list_box:last').data("id");
-    console.log(last_message_id)
     $.ajax({
       url: "api/messages",
       type: 'get',
